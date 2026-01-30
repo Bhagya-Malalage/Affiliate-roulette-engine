@@ -21,7 +21,8 @@ const WHEEL_NUMBERS = [
 ];
 
 export default function Home() {
-  const OFFICIAL_URL = "https://m.fun88ind.com/";
+  // UPDATED REDIRECTION URL
+  const OFFICIAL_URL = "https://wslefe.short.gy/Y247signup";
 
   const [balance, setBalance] = useState(1000);
   const [selectedNumbers, setSelectedNumbers] = useState<number[]>([]);
@@ -166,7 +167,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
-            y: [0, -12, 0], // Larger movement range
+            y: [0, -12, 0],
             opacity: 1,
           }}
           transition={{
