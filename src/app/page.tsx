@@ -77,7 +77,6 @@ export default function Home() {
 
     setRotation(nextRotation);
     setMustSpin(true);
-    setBalance((prev) => prev - BET_AMOUNT);
     setMessage("SPINNING...");
 
     logEvent({
@@ -110,7 +109,8 @@ export default function Home() {
         if (currentIdx < 2) setShowPopup("win");
       }, 1000);
     } else {
-      setMessage("LIMIT REACHED");
+      setBalance((prev) => prev - BET_AMOUNT);
+      setMessage("SORRY! BETTER LUCK NEXT TIME");
       setTimeout(() => setShowPopup("final"), 1200);
     }
 
